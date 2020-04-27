@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/icon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property="og:title" content="axela - my first pwa">
+        <meta property="og:description" content="axela is my first pwa">
+        <meta property="og:url" content="https://axela.netlify.app">
+        <title>axela - my first pwa</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#f2ba16">
+    </head>
+    <body>
+        <main>
+            <div id="dot" class="dot">
+                <div class=text>
+                    <h1>axela</h1>
+                    <h2>MY FIRST PWA</h2>
+                </div>
+            </div>
+            <svg>
+                <defs>
+                    <filter id="liquify">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0    0 1 0 0 0    0 0 1 0 0    0 0 0 18 -7" result="liquify" />
+                        <feBlend in="SourceGraphic" in2="liquify" />
+                    </filter>
+                </defs>
+            </svg>
+        </main>
+        <footer>
+            <div>Made with zeal</div>
+            <div>&copy; 2020 Donald K</div>
+        </footer>
+
+        <script src="vendor/TweenMax.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
