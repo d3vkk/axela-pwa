@@ -1,4 +1,4 @@
-const staticAxela = "axela-v1";
+const staticAxela = "axela-v1.1.0";
 const assets = ["/", "/index.html", "/css/main.css", "/js/main.js", "/img/icon.png", "vendor/TweenMax.min.js"]
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(caches.open(staticAxela).then(cache => {
